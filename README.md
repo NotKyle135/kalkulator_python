@@ -1,7 +1,7 @@
-#Kaltulator Scientific(Python, Math)
+# Kaltulator Scientific(Python, Math)
 
-#V1
-*Menggunakan loop dan match
+# V1
+* Menggunakan loop dan match
 
-#V2
+# V2
 *Lebih Terstruktur dan menggunakan Function

@@ -84,46 +84,46 @@ while True:
                     print("Masukan HANYA angka, bukan huruf!")
             try:
                 while True:
-                if eks == 1:
-                    angka = float(input("Masukan angka yang ingin diakarkan!\t"))
-                    if angka < 0:
-                        print("Angka tidak boleh negatif!")
-                    else:
-                      print(f"Hasil dari akar({angka}) adalah {math.sqrt(angka)}")
-                      break
-                elif eks == 2:
-                    angka = float(input("Masukan angka yang ingin dipangkatkan\t"))
-                    pangkat =  float(input("Masukan pangkat berapa!\t"))
-                    hasil_1 = math.pow(angka, pangkat)
-                    print (f"Hasil dari {angka}^{pangkat} adalah {hasil_1}")
-                    break
-                elif eks == 3:
-                    angka = int(input("Masukan nilai bulat positif!\t"))
-                    print(f"Hasil dari faktorial {angka} adalah {math.factorial(angka)}")
-                    break
-                elif eks == 4:
-                    angka = float(input("Masukan untuk Log10!\t"))
-                    if angka == 0:
-                        print("Angka tidak boleh 0")
-                    else:
-                        print(f"Hasil dari Log10{angka} adalah {math.log10(angka)}")
+                    if eks == 1:
+                        angka = float(input("Masukan angka yang ingin diakarkan!\t"))
+                        if angka < 0:
+                            print("Angka tidak boleh negatif!")
+                        else:
+                            print(f"Hasil dari akar({angka}) adalah {math.sqrt(angka)}")
+                            break
+                    elif eks == 2:
+                        angka = float(input("Masukan angka yang ingin dipangkatkan\t"))
+                        pangkat =  float(input("Masukan pangkat berapa!\t"))
+                        hasil_1 = math.pow(angka, pangkat)
+                        print (f"Hasil dari {angka}^{pangkat} adalah {hasil_1}")
                         break
-                elif eks == 5:
-                    n = int(input("Masukan nilai n!\t"))
-                    r = int(input("Masukan nilai r!\t"))
-                    if n >= r >= 0:
-                        print(f"Hasil dari kombinasi({n}, {r}) adalah {math.comb(n,r)}")
+                    elif eks == 3:
+                        angka = int(input("Masukan nilai bulat positif!\t"))
+                        print(f"Hasil dari faktorial {angka} adalah {math.factorial(angka)}")
                         break
-                    else:
-                        print("[!] n harus >= r dan tidak boleh negatif!")
-                elif eks == 6:
-                    n = int(input("Masukan nilai n!\t"))
-                    r = int(input("Masukan nilai r!\t"))
-                    if n >= r >= 0:
-                        print(f"Hasil dari permutasi({n}, {r}) adalah {math.perm(n,r)}")
-                        break
-                    else:
-                        print("[!] n harus >= r dan tidak boleh negatif!")
+                    elif eks == 4:
+                        angka = float(input("Masukan untuk Log10!\t"))
+                        if angka == 0:
+                            print("Angka tidak boleh 0")
+                        else:
+                            print(f"Hasil dari Log10{angka} adalah {math.log10(angka)}")
+                            break
+                    elif eks == 5:
+                        n = int(input("Masukan nilai n!\t"))
+                        r = int(input("Masukan nilai r!\t"))
+                        if n >= r >= 0:
+                            print(f"Hasil dari kombinasi({n}, {r}) adalah {math.comb(n,r)}")
+                            break
+                        else:
+                            print("[!] n harus >= r dan tidak boleh negatif!")
+                    elif eks == 6:
+                        n = int(input("Masukan nilai n!\t"))
+                        r = int(input("Masukan nilai r!\t"))
+                        if n >= r >= 0:
+                            print(f"Hasil dari permutasi({n}, {r}) adalah {math.perm(n,r)}")
+                            break
+                        else:
+                            print("[!] n harus >= r dan tidak boleh negatif!")
             except ValueError:
                 print("[!] Input tidak valid")
             except OverflowError:
